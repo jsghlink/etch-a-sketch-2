@@ -1,45 +1,53 @@
-// 1. used classList.add('content') first
 const container = document.querySelector('#container');
 
-const divone = document.createElement('div');
-divone.classList.add('content');
-// divone.classList.toggle('content');
-divone.textContent = 'Adding content to a div named - divone.';
+const divOne = document.createElement('div');
 
-container.appendChild(divone);
-// 2. The second exercise begins from here
+divOne.classList.add('content');
+// divOne.classList.toggle('content');
+// 1. used classList.add('content') first. Check usage for toggle.
 
-const paraone = document.createElement('p');
-paraone.style.cssText = 'color: red;';
+divOne.textContent = 'Adding content to a div named - divOne.';
 
-// divone.insertBefore(paraone, headerthree);
-// divone.insertBefore(paraone, divone.firstElementChild);
-// divone.appendChild(paraone);
+container.appendChild(divOne);
 
-const headerthree = document.createElement('h3');
-headerthree.style.cssText = 'color: blue;';
-headerthree.textContent = "I'm a Bluregaard! header!"; // 3. used "" here
+// 2. Adding <p> to #container div.
 
-container.appendChild(headerthree);
-// divone.insertBefore(paraone, divone.lastChild);
-container.insertBefore(paraone, headerthree);
-paraone.textContent = 'This is red.';
+const paraOne = document.createElement('p');
 
-// sub-part 3 begins here
-// const divtwo = document.createElement('div');
-// divtwo.setAttribute('style', 'border: black; background: pink;');
-// container.appendChild(divtwo);
+paraOne.style.cssText = 'color: red;';
 
-// const headerthree = document.createElement('h3');
-// const headerone = document.createElement('h1');
-// headerone.textContent = "I'm living in divtwo!"
-// // divtwo.appendChild(headerone);
+paraOne.textContent = 'This is red.';
+// divOne.insertBefore(paraOne, headerThree);
+// divOne.insertBefore(paraOne, divOne.firstElementChild);
+// divOne.appendChild(paraOne);
+
+const headerThree = document.createElement('h3');
+
+headerThree.style.cssText = 'color: blue;';
+
+headerThree.textContent = "I'm a Bluregaard header!"; // 3. used "" here.
+
+container.appendChild(headerThree); // 4. Last child for container is headerThree.
+// divOne.insertBefore(paraOne, divOne.lastChild);
+
+container.insertBefore(paraOne, headerThree); // 5. Order of container elements - divOne, paraOne, headerThree.
+
+// 6. Sub-part 3 begins here - 
+const divTwo = document.createElement('div');
+
+divTwo.setAttribute('style', 'border: black; background: pink;');
+headerThree.insertAdjacentElement(divTwo);
+
+// const headerThree = document.createElement('h3');
+// const headerOne = document.createElement('h1');
+// headerOne.textContent = "I'm living in divTwo!"
+// // divTwo.appendChild(headerOne);
 
 // const paratwo = document.createElement('p');
 // paratwo.textContent = 'ME TOO!';
-// divtwo.insertBefore(paratwo, headerone);
+// divTwo.insertBefore(paratwo, headerOne);
 
-// container.appendChild(divtwo);
+// container.appendChild(divTwo);
 
 
 
