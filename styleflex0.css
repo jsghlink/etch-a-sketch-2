@@ -1,0 +1,77 @@
+* {
+    margin: 0%;
+    padding: 10px; 
+    box-sizing: border-box;
+    border: 2px solid teal;
+}
+/* ----------------------------------------------------------------------------------------*/
+.container {
+    /* background-color: aqua; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------------------------------------------------------------------------------------*/
+.box {
+    height: 300px;
+    width: 500px; 
+    display: flex;
+    justify-content: center;   
+} /* could also have gone with just .box */
+/* ----------------------------------------------------------------------------------------*/
+.labelheading {
+    flex-basis: content;
+}
+/* ----------------------------------------------------------------------------------------*/
+.buttonspace {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    flex-basis: content;
+}
+
+.inbuttonspace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.button {
+    background-color: #4d1919;
+    color: burlywood;
+    border-radius: 20%;
+    padding: 20px;
+    /* padding: 10px;
+    margin: 10px; */
+}
+
+.setreset:hover {
+    background-color: skyblue;
+    color: white;
+    box-shadow: 0 0 30px 0 skyblue,
+                0 0 30px 0 skyblue,
+                0 0 10px 0 skyblue inset;
+}
+/* ----------------------------------------------------------------------------------------*/
+.creditsfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    flex-basis: content;
+    
+    text-align: center;
+}
+/* ----------------------------------------------------------------------------------------*/
+.labelheading h2, .creditsfooter p {
+    text-align: center;
+}
+
+.parafooter {
+    text-align: center;
+}
+
