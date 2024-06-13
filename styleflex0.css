@@ -1,29 +1,188 @@
+/*------------------------------------1.7 / Main area-------------------------------------*/
+
 * {
     margin: 0%;
     padding: 10px; 
     box-sizing: border-box;
-    border: 2px solid teal;
+    border: 2px solid red;
 }
-/* ----------------------------------------------------------------------------------------*/
-.container {
-    /* background-color: aqua; */
+
+/* Added on 13-06-24 */
+body {
+    background: url("kelly-sikkema-vtKc7BpJ-vU-unsplash.jpg");
+    background-color: #1F2937;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-blend-mode:multiply; changed this on 13-06-24 */
+}
+
+.outsidecontainer {
+    /* background-color: white; changed this on 13-06-24 */
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-/* ----------------------------------------------------------------------------------------*/
-.box {
+
+/*------------------------------------1.1 / Proj. heading---------------------------------*/
+
+.projectheading {
+    /* flex-basis: content;
+    /*padding: 5px;*/
+    display: flex;
+    justify-content: center;
+    /* align-content: center; 
+    padding-bottom: 0px;
+    background-color: #1F2937; */
+    width: 70vw;
+}
+
+/*------------------------------------1.2 / Enter grid size-------------------------------*/
+
+.entergridsize {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+}
+
+.entergridsizesub1 {
+    display: flex;
+    justify-content: center;
+    /* flex-basis: 100%; */
+}
+
+.inputgridsize{
+    width: 10%;
+}
+
+#copyinput-id {
+    width: 35%;
+}
+
+.entergridsizesub2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.warnprompt {
+    width: 100%;
+    text-align: center;
+    /* font-size: medium; */
+    height: 45px;
+}
+
+/* .prompt {
+    display: block;
+} */
+
+/*------------------------------------1.3 / Display desired grid size---------------------*/
+
+
+/*------------------------------------1.4 / Select colour---------------------------------*/
+
+.selectcolourbuttonscontainer {
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+}
+
+/*------------------------------------1.5 / Square Target Container-----------------------*/
+
+.outersquarescontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 70vh; /* was 40vh initially */
+    padding: 5px 5px;
+    /* width: 40vw;
+    height: 40vh; */
+    /* width: 500px;
+    height: 500px; */
+}
+
+.mainsquarescontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid #4d1919; */
+    /* width: 100%;
+    height: 100%; */
+}
+
+/* .rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 0; width: 100%;
+} CHECK THIS */
+
+/* .insiderows {
+    display: flex;
+    flex: 1; width: 100%;
+    /* flex-basis: 100%; *
+} CHECK THIS */
+
+/*------------------------------------1.6 / Footer Area-----------------------------------*/
+
+.creditsfooter {
+    /* display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    flex-basis: content; 
+    
+    text-align: center; */
+    display: flex;
+    justify-content: center;
+    /* padding-top: 0%; */
+
+    /* align-items: flex-end; */
+    width: 70vw;
+}
+
+/* .labelheading h2, .creditsfooter p {
+    text-align: center;
+} CHECK THIS */
+
+.projectheading-h2, .creditsfooter p {
+    text-align: center;
+}
+
+.parafooter {
+    text-align: center;
+}
+
+/*------------------------------------1.7 / Main area-------------------------------------*/
+
+
+/*------------------------------------ALL OTHER-------------------------------------------*/
+
+/* .box {
     height: 300px;
-    width: 500px; 
+    width: 650px; 
     display: flex;
     justify-content: center;   
-} /* could also have gone with just .box */
+}  could also have gone with just .box  */
+
+
+
+
 /* ----------------------------------------------------------------------------------------*/
-.labelheading {
-    flex-basis: content;
+button {
+    border-radius: 5px;
+    /* border: 3px solid rgb(71, 69, 69); add later maybe */
+    cursor: pointer;
+    /* crosshair for later! */
 }
-/* ----------------------------------------------------------------------------------------*/
+
 .buttonspace {
     display: flex;
     flex-direction: column;
@@ -57,21 +216,178 @@
                 0 0 10px 0 skyblue inset;
 }
 /* ----------------------------------------------------------------------------------------*/
-.creditsfooter {
+/* .squaresarea { SEE 10)1) AND 2) in copy
+    /* display: flex; 
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 90%;
+
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+
+    /* padding: 0px; *
+    
+}
+
+/* .squaresgrids {
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
+    justify-content: center;
     align-items: center;
-    flex-basis: content;
     
-    text-align: center;
+    flex-wrap: wrap;
+} 
+
+.checksquares {
+    display: flex;
+    flex-basis: 100%;
+    height: 30%;
+    /* width: calc(100%/3); */
+    
+    /* flex: 1 1 1; */
+    /* width: 100%;
+    height: 100%;
+    gap: 0px; 
+} */
+
+/* .squaresarea{ SEE 10)2) in copy
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
 }
+
+.rowshai{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+
+    
+}
+
+.insiderows {
+    flex-basis: 100%;
+}*/
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:0;
+}
+
+tr{
+    padding:0;
+}
+
+
+
+/*----------------------------------------------------------------------------------------*/
+
 /* ----------------------------------------------------------------------------------------*/
-.labelheading h2, .creditsfooter p {
-    text-align: center;
-}
 
-.parafooter {
-    text-align: center;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TAYLOR SWIFT VERSION BEGINS HERE */
