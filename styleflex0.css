@@ -76,6 +76,10 @@ body {
     width: 100%;
 }
 
+.entergridsizesub3{
+    padding: 0px;
+}
+
 .warnprompt {
     width: 100%;
     text-align: center;
@@ -98,6 +102,39 @@ body {
     width: 70vw;
 }
 
+.selectcolourbuttonscontainer input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+
+  .selectcolourbuttonscontainer label {
+    display: inline-block;
+    /* background-color: #ddd; */
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    /* font-family: sans-serif, Arial; changed this on 13-06-24 */
+    font-family: inherit;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 5px;
+}
+
+.selectcolourbuttonscontainer input[type="radio"]:checked + label {
+    background-color:#0000EE;
+    /* border-color: #4c4; */
+    border-color: #85ceff;
+    /* 85ceff */
+}
+
+.selectcolourbuttonscontainer input[type="radio"]:focus + label {
+    border: 2px dashed #444;
+}
+
+.selectcolourbuttonscontainer label:hover {
+    background-color: #85ceff;
+  }
 /*------------------------------------1.5 / Square Target Container-----------------------*/
 
 .outersquarescontainer {
@@ -211,11 +248,13 @@ body {
 .button {
     background-color: white;
     color: black;
-    border-radius: 20%;
+    border-radius: 5px;
+    padding: 10px 20px;
     /* padding: 20px; changed this on 13-06-24 */
     /* padding: 10px;
     margin: 10px; */
     font-family: inherit; /* changed this on 13-06-24 */
+    font-size: 16px;
 }
 
 .setreset:hover {
