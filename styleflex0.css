@@ -14,6 +14,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     /* background-blend-mode:multiply; changed this on 13-06-24 */
+
 }
 
 .outsidecontainer {
@@ -22,6 +23,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-family: 'JunkDog';
+}
+
+@font-face {
+    font-family: 'JunkDog';
+    src: url('/home/tyrell/Documents/Repos/test-js/ETCH-A-SKETCH/junkdog-font-example/creativemarket-junkdog-typeface-2564566/JunkDog.otf');
 }
 
 /*------------------------------------1.1 / Proj. heading---------------------------------*/
@@ -55,6 +63,7 @@ body {
 
 .inputgridsize{
     width: 10%;
+    font-family: inherit; /* changed this on 13-06-24 */
 }
 
 #copyinput-id {
@@ -176,7 +185,7 @@ body {
 
 
 /* ----------------------------------------------------------------------------------------*/
-button {
+.button {
     border-radius: 5px;
     /* border: 3px solid rgb(71, 69, 69); add later maybe */
     cursor: pointer;
@@ -200,12 +209,13 @@ button {
 }
 
 .button {
-    background-color: #4d1919;
-    color: burlywood;
+    background-color: white;
+    color: black;
     border-radius: 20%;
-    padding: 20px;
+    /* padding: 20px; changed this on 13-06-24 */
     /* padding: 10px;
     margin: 10px; */
+    font-family: inherit; /* changed this on 13-06-24 */
 }
 
 .setreset:hover {
