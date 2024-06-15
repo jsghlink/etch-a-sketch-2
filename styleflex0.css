@@ -43,6 +43,7 @@ body {
     padding-bottom: 0px;
     background-color: #1F2937; */
     width: 70vw;
+    font-size: larger;
 }
 
 /*------------------------------------1.2 / Enter grid size-------------------------------*/
@@ -59,6 +60,7 @@ body {
     display: flex;
     justify-content: center;
     /* flex-basis: 100%; */
+    font-size:medium;
 }
 
 .inputgridsize{
@@ -100,6 +102,8 @@ body {
     display: flex;
     justify-content: center;
     width: 70vw;
+    /* padding: 5px; */
+    /* cursor: pointer; */
 }
 
 .selectcolourbuttonscontainer input[type="radio"] {
@@ -116,9 +120,12 @@ body {
     padding: 10px 20px;
     /* font-family: sans-serif, Arial; changed this on 13-06-24 */
     font-family: inherit;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size:medium;
     border: 2px solid #444;
     border-radius: 5px;
+    cursor: pointer; 
+    /* Found it on 14-06. The answer lay simply in locating the class and property. */
 }
 
 .selectcolourbuttonscontainer input[type="radio"]:checked + label {
@@ -126,6 +133,7 @@ body {
     /* border-color: #4c4; */
     border-color: #85ceff;
     /* 85ceff */
+    /* transition: 0.2s all; */
 }
 
 .selectcolourbuttonscontainer input[type="radio"]:focus + label {
@@ -135,6 +143,10 @@ body {
 .selectcolourbuttonscontainer label:hover {
     background-color: #85ceff;
   }
+
+  /* .clearbutton{
+    padding-bottom: 5px;
+  } Revisit this. Perhaps adding in a div would work. changed this on 13-06-24. */
 /*------------------------------------1.5 / Square Target Container-----------------------*/
 
 .outersquarescontainer {
@@ -192,6 +204,7 @@ body {
 
     /* align-items: flex-end; */
     width: 70vw;
+    font-size: smaller;
 }
 
 /* .labelheading h2, .creditsfooter p {
@@ -254,7 +267,17 @@ body {
     /* padding: 10px;
     margin: 10px; */
     font-family: inherit; /* changed this on 13-06-24 */
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size:medium;
+    cursor: pointer;
+}
+
+#black-pen, #red-pen, #rainbow, #eraser{
+    cursor: pointer;
+}
+
+a {
+    padding: 0px;
 }
 
 .setreset:hover {
