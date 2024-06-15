@@ -132,6 +132,7 @@ body {
     background-color:#0000EE;
     /* border-color: #4c4; */
     border-color: #85ceff;
+    color: white;
     /* 85ceff */
     /* transition: 0.2s all; */
 }
@@ -142,6 +143,7 @@ body {
 
 .selectcolourbuttonscontainer label:hover {
     background-color: #85ceff;
+    color: white;
   }
 
   /* .clearbutton{
@@ -274,6 +276,25 @@ body {
 
 #black-pen, #red-pen, #rainbow, #eraser{
     cursor: pointer;
+}
+
+#usersubmit-id:hover {
+    background-color: #85ceff;
+    color: white;
+}
+
+#clearbutton-id:hover{
+    background-color: #85ceff;
+    color: white;
+}
+
+#usersubmit-id:active {
+    background-color:#0000EE;
+}
+
+#clearbutton-id:active {
+    background-color:#0000EE;
+    /* color: white; */
 }
 
 a {
