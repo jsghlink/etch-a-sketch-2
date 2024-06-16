@@ -47,7 +47,7 @@ body {
     padding-bottom: 0px;
     background-color: #1F2937; */
     width: 70vw;
-    font-size: larger;
+    font-size:x-large;
 }
 
 /*------------------------------------1.2 / Enter grid size-------------------------------*/
@@ -62,9 +62,10 @@ body {
 
 .entergridsizesub1 {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     /* flex-basis: 100%; */
     font-size:medium;
+    margin: auto;
 }
 
 .inputgridsize{
@@ -181,8 +182,17 @@ body {
 }
 
 .row {
-    padding: 0px;
+    padding: 1px; /* Found it on 14-06.*/
+    background-color: white;
+    /* border-color: white; */
 }
+
+.column {
+    /* padding: 0px; */
+    /* border-color: white; */
+}
+
+/* adding another <p>2022 Kasugaijin for <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a></p>*/
 
 /* .row {
     display: flex;
@@ -399,6 +409,8 @@ table{
 tr{
     padding:0;
 }
+
+/* adding another <p>2022 Kasugaijin for <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a></p>*/
 
 
 
