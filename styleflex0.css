@@ -4,13 +4,13 @@
     margin: 0%;
     padding: 10px; 
     box-sizing: border-box;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 /* Added on 13-06-24 */
 body {
     background: url("kelly-sikkema-vtKc7BpJ-vU-unsplash.jpg");
-    background-color: #1F2937;
+    background-color: black;
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -160,13 +160,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70vw;
-    height: 70vh; /* was 40vh initially */
-    padding: 5px 5px;
+    width:fit-content;
+    /* width and height were 70vw and 70vh */
+    height:fit-content;
+    /* was 40vh initially */
+    padding: 2px; /* changed this */
     /* width: 40vw;
     height: 40vh; */
     /* width: 500px;
     height: 500px; */
+    padding: 0;
+    margin-top: 15px; /*start from here*/
+
 }
 
 .mainsquarescontainer {
@@ -176,20 +181,38 @@ body {
     align-items: center; 
     width: 100%;
     height: 100%;
+    /* width: 600px; */
+    /* height: 600px; */
+    /* width and height were both set to 600px each respectiveley earlier */
     /* border: 5px solid #4d1919; */
     /* width: 100%;
     height: 100%; */
+    flex: 1;
+    padding: 0;
+    /* gap: 2px; */
 }
 
 .row {
     padding: 1px; /* Found it on 14-06.*/
+    /* This need to checked out in that you need padding or margin */
     background-color: white;
     /* border-color: white; */
+    flex: 1;
+    gap: 2px;
+    border-color:#85ceff;
+    /* width: 100%; this had no effect */
+    display: flex;
+    /* flex-wrap:wrap; */
+    flex-direction: column;
 }
 
 .column {
-    /* padding: 0px; */
+    /* padding: 1px; */
     /* border-color: white; */
+    flex: 1;
+    border-color:#85ceff;
+    gap: 2px;
+    display: flex;
 }
 
 /* adding another <p>2022 Kasugaijin for <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a></p>*/
