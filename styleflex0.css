@@ -4,7 +4,7 @@
     margin: 0%;
     padding: 10px; 
     box-sizing: border-box;
-    /* border: 2px solid red; */
+    border: 2px solid transparent;
 }
 
 /* Added on 13-06-24 */
@@ -70,11 +70,15 @@ body {
 
 .inputgridsize{
     width: 10%;
+    width: 8%; /*this width loooks better on the page overall*/
     font-family: inherit; /* changed this on 13-06-24 */
+    text-align: center;
+    caret-color: #85ceff;
 }
 
 #copyinput-id {
-    width: 35%;
+    /* width: 35%; */
+    margin-right: 0;
 }
 
 .entergridsizesub2 {
@@ -171,7 +175,9 @@ body {
     height: 500px; */
     padding: 0;
     margin-top: 15px; /*start from here*/
-
+    border-color: #0000EE; /* ***** */
+    border: 10px solid transparent;
+    border-radius: 5px;
 }
 
 .mainsquarescontainer {
@@ -190,6 +196,8 @@ body {
     flex: 1;
     padding: 0;
     /* gap: 2px; */
+    border-color: transparent;
+    border-radius: 5px;
 }
 
 .row {
@@ -197,9 +205,10 @@ body {
     /* This need to checked out in that you need padding or margin */
     background-color: white;
     /* border-color: white; */
+    border-color: transparent;
     flex: 1;
     gap: 2px;
-    border-color:#85ceff;
+    /* border-color:#85ceff;***** */
     /* width: 100%; this had no effect */
     display: flex;
     /* flex-wrap:wrap; */
